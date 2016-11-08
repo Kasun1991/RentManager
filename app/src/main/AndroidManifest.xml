@@ -18,7 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".SinglePropertyActivity"
+            android:label="@string/title_activity_single_property"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PropertyListActivity"
+            android:label="@string/title_activity_property_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
