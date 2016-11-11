@@ -26,6 +26,10 @@
         <activity
             android:name=".PropertyListActivity"
             android:label="@string/title_activity_property_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MultiUnitPropertyActivity"
+            android:label="@string/title_activity_multi_unit_property"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
