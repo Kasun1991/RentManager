@@ -1,15 +1,14 @@
 package com.kasungunathilaka.rentmanager;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
@@ -39,7 +38,20 @@ public class PropertyListActivity extends BaseActivity
             public void onClick(View view) {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-                startActivity(new Intent(PropertyListActivity.this,SinglePropertyActivity.class));
+                //startActivity(new Intent(PropertyListActivity.this,SinglePropertyActivity.class));
+                CharSequence colors[] = new CharSequence[]{"MULTI-UNIT", "SINGLE-UNIT"};
+                AlertDialog.Builder builder = new AlertDialog.Builder(PropertyListActivity.this);
+                builder.setItems(colors, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (which == 0) {
+                            startActivity(new Intent(PropertyListActivity.this, MultiUnitPropertyActivity.class));
+                        } else {
+                            startActivity(new Intent(PropertyListActivity.this, SinglePropertyActivity.class));
+                        }
+                    }
+                });
+                builder.show();
             }
         });
     }
