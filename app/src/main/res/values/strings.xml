@@ -5,8 +5,28 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="title_activity_single_property">SinglePropertyActivity</string>
-    <string name="title_activity_property_list">PropertyListActivity</string>
-    <string name="title_activity_multi_unit_property">MultiUnitPropertyActivity</string>
+    <string name="title_activity_single_property">Single-Unit Property</string>
+    <string name="title_activity_property_list">Property List</string>
+    <string name="title_activity_multi_unit_property">Multi-Unit Property</string>
+
+    <!--Hint Text for TextViews-->
+    <string name="text_view_hint_address">Address</string>
+    <string name="text_view_hint_rent">Rent</string>
+    <string name="text_view_hint_utilities">Utilities</string>
+    <string name="text_view_hint_services">Services</string>
+    <string name="text_view_hint_lease_start">Lease Start</string>
+    <string name="text_view_hint_lease_end">Lease End</string>
+    <string name="text_view_hint_mortgage_payment">Mortgage Payment</string>
+    <string name="text_view_hint_security_deposit">Security Deposit</string>
+    <string name="text_view_hint_pet_deposit">Pet Deposit</string>
+    <string name="text_view_hint_payment_permit_date">Payment Permit Date</string>
+    <string name="text_view_hint_name">Name</string>
+
+    <!--Text for UIs-->
+    <string name="switch_text_escrow">Escrow</string>
+
+    <!--Title Text for CardView-->
+    <string name="card_view_title_tenants">Tenants</string>
+    <string name="text_view_hint_telephone">Telephone</string>
+    <string name="text_view_hint_email">E-mail</string>
 </resources>

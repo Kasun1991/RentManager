@@ -31,14 +31,13 @@
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
                     app:counterTextAppearance="@color/colorSecondary">
 
                     <EditText
                         android:id="@+id/etAddress"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Address"
+                        android:hint="@string/text_view_hint_address"
                         android:inputType="textMultiLine"
                         android:maxLines="5"
                         android:minLines="3" />
@@ -46,80 +45,73 @@
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
-
                         android:id="@+id/etRent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Rent"
+                        android:hint="@string/text_view_hint_rent"
                         android:inputType="numberDecimal" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etUtilities"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Utilities"
+                        android:hint="@string/text_view_hint_utilities"
                         android:inputType="textAutoComplete" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etServices"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Services"
+                        android:hint="@string/text_view_hint_services"
                         android:inputType="numberDecimal" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etLeaseStart"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Lease Start"
+                        android:hint="@string/text_view_hint_lease_start"
                         android:inputType="none" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etLeaseEnd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Lease End"
+                        android:hint="@string/text_view_hint_lease_end"
                         android:inputType="none" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etMortgagePayment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Mortgage Payment"
+                        android:hint="@string/text_view_hint_mortgage_payment"
                         android:inputType="numberDecimal" />
                 </android.support.design.widget.TextInputLayout>
 
@@ -146,7 +138,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:text="Escrow"
+                    android:text="@string/switch_text_escrow"
                     app:theme="@style/RentManagerSwitch" />
 
             </LinearLayout>
@@ -171,40 +163,37 @@
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etSecurityDeposit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Security Deposit"
+                        android:hint="@string/text_view_hint_security_deposit"
                         android:inputType="numberDecimal" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etPetDeposit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Pet Deposit"
+                        android:hint="@string/text_view_hint_pet_deposit"
                         android:inputType="numberDecimal" />
                 </android.support.design.widget.TextInputLayout>
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_height="wrap_content">
 
                     <EditText
                         android:id="@+id/etPaymentPermitDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Payment Permit Date"
+                        android:hint="@string/text_view_hint_payment_permit_date"
                         android:inputType="date" />
                 </android.support.design.widget.TextInputLayout>
 
@@ -236,18 +225,19 @@
                         android:layout_height="40dp"
                         android:background="@color/colorPrimary"
                         android:gravity="center"
-                        android:text="Tenants"
+                        android:text="@string/card_view_title_tenants"
                         android:textColor="@android:color/white"
                         android:textStyle="bold" />
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvTenant"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_marginTop="40dp" />
 
-
                 <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabAddTenant"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/fab_margin"
